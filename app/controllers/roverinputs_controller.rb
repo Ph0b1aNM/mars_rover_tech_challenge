@@ -1,7 +1,9 @@
 class RoverinputsController < ApplicationController
+
+	layout "application"
 	
 	def index
-		
+
 	end
 
 	def new

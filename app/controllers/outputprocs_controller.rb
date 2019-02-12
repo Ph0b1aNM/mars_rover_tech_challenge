@@ -2,6 +2,10 @@ require_relative '../../lib/mars_rover'
 
 class OutputprocsController < ApplicationController
 
+	layout "application"
+
+	helper_method :run_output
+
 	attr_accessor :varsopx, :varsopy, :varr1px, :varr1py, :varr1pface, :varinst1, :varr2px, :varr2py, :varr2pface, :varinst2
 
 	def initialize(varsopx = Roverinput.first, varsopy = Roverinput.first, varr1px = Roverinput.first, varr1py = Roverinput.first, varr1pface = Roverinput.first, varinst1 = Roverinput.first, varr2px = Roverinput.first, varr2py = Roverinput.first, varr2pface = Roverinput.first, varinst2 = Roverinput.first)
@@ -22,7 +26,7 @@ class OutputprocsController < ApplicationController
 	end
 
 	def show
-		
+
   	end
 
   	#Processing Output
