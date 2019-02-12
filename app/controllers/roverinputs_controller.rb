@@ -3,7 +3,7 @@ class RoverinputsController < ApplicationController
 	layout "application"
 	
 	def index
-
+		Roverinput.delete_all
 	end
 
 	def new
