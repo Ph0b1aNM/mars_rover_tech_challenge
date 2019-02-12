@@ -1,0 +1,55 @@
+<h1>Roverinputs Inputs Test Page</h1>
+
+<h1>Add Rover Inputs below:</h1>
+
+<%= form_for :ridata, url: roverinputs_path do |f| %>
+    <% if @mrinput.errors.any? %>
+      <% @mrinput.errors.full_messages.each do |msg| %>
+        <div class="alert alert-danger"><%= msg %></div>
+      <% end %>
+    <% end %>
+  <p>
+    <%= f.label :sopx %><br>
+    <%= f.number_field(:sopx, {:class => 'form-control'}) %>
+  </p>
+  <p>
+    <%= f.label :sopy %><br>
+    <%= f.number_field(:sopy, {:class => 'form-control'}) %>
+  </p>
+  <p>
+    <%= f.label :r1px %><br>
+    <%= f.number_field(:r1px, {:class => 'form-control'}) %>
+  </p>
+   <p>
+    <%= f.label :r1py %><br>
+    <%= f.number_field(:r1py, {:class => 'form-control'}) %>
+  </p>
+   <p>
+    <%= f.label :r1pface %><br>
+    <%= f.text_field(:r1pface, {:class => 'form-control'}) %>
+  </p>
+  <p>
+    <%= f.label :inst1 %><br>
+    <%= f.text_field(:inst1, {:class => 'form-control'}) %>
+  </p>
+  <p>
+    <%= f.label :r2px %><br>
+    <%= f.number_field(:r2px, {:class => 'form-control'}) %>
+  </p>
+  <p>
+    <%= f.label :r2py %><br>
+    <%= f.number_field(:r2py, {:class => 'form-control'}) %>
+  </p>
+  <p>
+    <%= f.label :r2pface %><br>
+    <%= f.text_field(:r2pface, {:class => 'form-control'}) %>
+  </p>
+  <p>
+    <%= f.label :inst2 %><br>
+    <%= f.text_field(:inst2, {:class => 'form-control'}) %>
+  </p>
+ 
+  <p>
+    <%= f.submit({:class => 'btn btn-primary'}) %>
+  </p>
+<% end %>
