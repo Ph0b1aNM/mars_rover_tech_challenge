@@ -9,47 +9,47 @@
       <% end %>
     <% end %>
   <p>
-    <%= f.label :sopx %><br>
+    <%= f.label :sopx, 'Size of Plateau - X Co-ordinate' %><br>
     <%= f.number_field(:sopx, {:class => 'form-control'}) %>
   </p>
   <p>
-    <%= f.label :sopy %><br>
+    <%= f.label :sopy, 'Size of Plateau - Y Co-ordinate' %><br>
     <%= f.number_field(:sopy, {:class => 'form-control'}) %>
   </p>
   <p>
-    <%= f.label :r1px %><br>
+    <%= f.label :r1px, '1st Rover Position - X Co-ordinate' %><br>
     <%= f.number_field(:r1px, {:class => 'form-control'}) %>
   </p>
    <p>
-    <%= f.label :r1py %><br>
+    <%= f.label :r1py, '1st Rover Position - Y Co-ordinate' %><br>
     <%= f.number_field(:r1py, {:class => 'form-control'}) %>
   </p>
    <p>
-    <%= f.label :r1pface %><br>
+    <%= f.label :r1pface, '1st Rover Direction Facing' %><br>
     <%= f.text_field(:r1pface, {:class => 'form-control'}) %>
   </p>
   <p>
-    <%= f.label :inst1 %><br>
+    <%= f.label :inst1, '1st Rover Instruction Set' %><br>
     <%= f.text_field(:inst1, {:class => 'form-control'}) %>
   </p>
   <p>
-    <%= f.label :r2px %><br>
+    <%= f.label :r2px, '2nd Rover Position - X Co-ordinate' %><br>
     <%= f.number_field(:r2px, {:class => 'form-control'}) %>
   </p>
   <p>
-    <%= f.label :r2py %><br>
+    <%= f.label :r2py, '2nd Rover Position - Y Co-ordinate' %><br>
     <%= f.number_field(:r2py, {:class => 'form-control'}) %>
   </p>
   <p>
-    <%= f.label :r2pface %><br>
+    <%= f.label :r2pface, '2nd Rover Direction Facing' %><br>
     <%= f.text_field(:r2pface, {:class => 'form-control'}) %>
   </p>
   <p>
-    <%= f.label :inst2 %><br>
+    <%= f.label :inst2, '2nd Rover Instruction Set' %><br>
     <%= f.text_field(:inst2, {:class => 'form-control'}) %>
   </p>
  
   <p>
-    <%= f.submit({:class => 'btn btn-primary'}) %>
+    <%= f.submit :ridata, class: 'btn btn-primary', value: 'Next' %>
   </p>
 <% end %>

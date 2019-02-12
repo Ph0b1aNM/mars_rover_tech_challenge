@@ -1,7 +1,7 @@
 class RoverinputsController < ApplicationController
 	
 	def index
-		#@mrinput = MrSolutionM.all
+		
 	end
 
 	def new

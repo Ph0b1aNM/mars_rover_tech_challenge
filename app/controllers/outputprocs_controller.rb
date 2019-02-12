@@ -18,13 +18,11 @@ class OutputprocsController < ApplicationController
 	end
 
 	def index
-		@testvar = Roverinput.first
+		
 	end
 
-	def show(top_right_x = @varsopx, top_right_y = @varsopy)
-    @top_right_x = top_right_x
-    @top_right_y = top_right_y
-    @varinst1
+	def show
+		
   	end
 
   	#Processing Output
